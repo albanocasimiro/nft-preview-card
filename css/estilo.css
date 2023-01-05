@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  list-style: none;
+}
+body{
+  background-color: hsl(217, 54%, 11%);
+}
+
+main{
+  border-radius:5%;
+  width: 30%;
+  padding: 1%;
+  margin: 4% auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(216, 50%, 16%);
+  color: #fff;
+  box-shadow: 10px ;
+}
+main h1{
+  margin: 5px 0 10px;
+}
+figure{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+figure img{
+  cursor: pointer;
+  max-width: 100%;
+}
+figcaption:hover{
+  opacity: 1;
+  transition: 1s;
+}
+figcaption{
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.421);
+}
+.h1:hover{
+  cursor: pointer;
+  transition: 1s;
+  color: hsl(178, 100%, 50%);
+}
+main p{
+  color:hsl(215, 51%, 70%) ;
+}
+main ul{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main ul li{
+  display: flex;
+}
+main ul li:nth-child(1){
+  color: hsl(178, 100%, 50%);
+}
+main ul li:last-child{
+  color:hsl(215, 51%, 70%);
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid hsl(215, 32%, 27%);
+}
+.avatar img{
+  width: 20%;
+  margin-right: 20px;
+}
+.attribution{
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+.attribution a{
+  text-decoration: none;
+  color:hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width:600px){
+  main{
+    width: 90%;
+    margin-top:50px;
+  }
+}
